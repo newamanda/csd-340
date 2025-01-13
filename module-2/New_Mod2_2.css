@@ -1,0 +1,79 @@
+/* Amanda New
+    csd340-A311
+    Module 2.2 Assignment
+    Building a Web Page Exercise
+    1/12/2025
+    */
+
+html, body {
+
+    font-size: 16px;
+    
+
+}
+
+address {
+
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+
+p {
+
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: "Roboto", serif;
+}
+
+h1 {
+
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+    font-family: "Roboto", serif;
+}
+
+
+a {
+
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #4F3674;
+    text-decoration: none;
+}
+
+a:visited {
+
+    text-decoration-line: underline;
+    background-color: rgb(161, 161, 161);
+
+}
+
+a:hover {
+
+    text-decoration-line: underline;
+    background-color: #D6A800;
+
+}
+
+
+p.intro {
+
+    text-indent: 2em;
+}
+
+span.sentence {
+
+    font-style: italic;
+
+}
