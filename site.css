@@ -1,0 +1,48 @@
+/* Amanda New
+    csd340-A311
+    Module 3.2 Assignment
+    GitHub Pages
+    1/19/2025
+    */
+
+ul.modules, ul.projects, ul.links{
+
+    color: rgb(255, 133, 52);
+
+}
+
+
+a {
+
+    color: rgb(255, 133, 52);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+
+a:hover {
+
+    color:#ff767d;
+
+}
+
+a:visited {
+
+    color:rgb(255, 226, 147)
+}
+
+body {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1, h2, h3, h4 {
+
+    background-color: rgb(253, 165, 107);
+    color: black;
+    border-style: solid;
+    border-color: #D6A800;
+    padding: 10px;
+    font-family: "Roboto", serif;
+
+}
