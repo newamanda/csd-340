@@ -1,0 +1,78 @@
+<!--Amanda New
+    csd340-A311
+    Module 9.3 Assignment
+    JavaScript Exercise, Part 1
+    2/16/2025
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Insert google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet" type="text/css">
+    
+    <!-- link to css file
+    <link href="New_Mod2_2.css" rel="stylesheet">-->
+
+    <title>"CSD 340 Development with HTML and CSS"</title>
+
+    <script>
+        var firstVariableValue = "butthead";
+        var secondVariableValue = "present";
+        var thirdVariableValue = "future";
+        var fourthVariableValue = "tree";
+    </script>
+
+</head>
+    
+<body>
+    <div id=”container”>
+    <h1> Assignment 9.3: JavaScript - Part 1</h1>
+    <h2> Back to the Future: Part Two </h2>
+
+    <p>
+
+    <!--comment to prevent deleting; unnecessary from Assignment 2.2
+        <address>
+    <a href="https://www.bellevue.edu/">Bellevue University</a><br>
+    1000 Galvin Road South<br>
+    Bellevue, NE 68005<br>
+    </address>-->
+
+    <!--Paragraphs; BTTF2 script-->
+    <p>Old Biff (OB): You always did have a way with women.</p>
+    <p>Biff (B):Get the hell out of my car, old man!</p>
+    <p>OB: You want to marry that girl, Biff? I can help make it happen.</p>
+    <p>B: Oh, yeah? Who are you, Miss Lonely-Hearts?</p>
+    <p>OB: Just get in the car, <span id = "butthead">___________</span>.</p>
+    <p>B: Who are you calling butthead, butthead? How do you know how to do that? Nobody can start this car but me.</p>
+    <p>OB: Just get in the car, Tannen. Today's your lucky day.</p>
+    <p>B: Hey! Hey! Hey, watch where you're driving, old man. If you dent this car, I'll kill you. This cost me 300 bucks!</p>
+    <p>OB: Would you shut up about the car?</p>
+    <p>B: Hey, and another thing. How do you know where I live?</p>
+    <p>OB: Let's just say we're related, Biff. And that being the case, I got a little <span id = "present">__________</span> for you. Something that'll make you rich. You want to be rich, don't you?</p>
+    <p>B: Oh, yeah. Sure. Right. That's rich. You're going to make me rich?</p>
+    <p>OB: You see this book? This book tells the <span id = "future">_________</span>. Tells the results of every major sports event till the end of the century. Football, baseball, horse races, boxing. The information in here is worth millions, and I'm giving it to you.</p>
+    <p>B: Well, that's very nice. Thank you very much. Now, why don't you make like a tree and get out of here?</p>
+    <P>OB: It's leave, you idiot. Make like a <span id = "tree">_________</span> and leave. You sound like a damn fool when you say it wrong.</P>
+
+    <!--buttons-->
+    <p>
+        <button type ="button"
+            onclick="document.getElementById('butthead').innerHTML = firstVariableValue">butthead</button>
+        <button type = "button"
+            onclick = "document.getElementById('present').innerHTML = secondVariableValue">present</button>
+        <button type = "button"
+            onclick = "document.getElementById('future').innerHTML = thirdVariableValue">future</button>
+        <button type = "button"
+            onclick="document.getElementById('tree').innerHTML = fourthVariableValue">tree</button>
+    </p>
+
+    <!--landing page-->
+    <div class="last" style="width: 100%; margin-top: 60%;">
+        <a href="../index.html">Back to Landing Page</a>
+    </div>
+
+</body>
+    
+</html>
