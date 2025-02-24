@@ -1,0 +1,71 @@
+<!--Amanda New
+    csd340-A311
+    Module 10.3 Assignment
+    JavaScript Exercise, Part 2
+    2/23/2025
+    -->
+
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'
+    'http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd'>
+  
+  <html xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+      <title>
+        Example 10
+      </title>
+      <script>
+        function displayImage(imageFile){
+          var largerImage = document.getElementById("mainImage");
+          var newNode = document.createElement("img");
+          newNode.id = "mainImage";
+          newNode.src = imageFile;
+          newNode.alt = "Large Image";
+          newNode.className = "mainImage";
+          newNode.style.width = "300px";
+          newNode.style.height = "200px";
+          largerImage.parentNode.replaceChild(newNode, largerImage);
+          
+        }
+      </script>
+  
+    </head>
+  
+    <body>
+      <br />
+      <div>
+        <a href=#
+           onmouseover="barn.src='barnacles.gif';"
+           onmouseout= "barn.src='this_is.png';"
+        >
+          <img border = 0 name = "barn" src = "this_is.png">
+        </a>
+      </div>
+      <br />
+      <div
+           onmouseover="this.style.fontSize='200px';this.innerHTML='BOO!'"
+           onmouseout= "this.style.fontSize='16px';this.innerHTML='Hover over for a surprise!';">
+  
+        Hover over for a surprise!
+        <br />
+  
+      </div>
+      <div>
+        <a href=#
+           onmouseover="bee.src='ribombee.png';"
+           onmouseout= "bee.src='cutiefly.png';"
+        >
+          <img border = 0 name = "bee" src = "cutiefly.png">
+        </a>
+      </div>
+      <br />
+      <div 
+           onmouseover="this.style.color='pink';"
+           onmouseout= "this.style.color='orange';">
+  
+        Cutiefly is evolving into Ribombee!
+  
+      </div>
+  
+    </body>
+  
+  </html>
