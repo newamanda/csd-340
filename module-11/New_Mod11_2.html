@@ -1,0 +1,80 @@
+<!--Amanda New
+    csd340-A311
+    Module 11.2 Assignment
+    JavaScript Exercise, Part 3
+    03/02/2025
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>"CSD 340 Development with HTML and CSS"</title>
+</head>
+
+
+<body>
+    <h1>
+        Assignment 11.2: JavaScript - Part 3
+    </h1>
+
+    <p>
+        Create your own To-Do list! You're able to add, delete your last item, and display the list contents
+        with ease! Enjoy!
+    </p>
+
+    <label for = "addList">Add item to To Do list:</label>
+    <input type="text" id="addList" placeholder="Enter Here">
+
+    <button onclick = "addItem()">Add</button>
+    <button onclick = "deleteLastItem()">Delete Last Entry</button>
+    <button onclick = "displayList()">Display</button>
+
+    <ul id="listContents"></ul>
+
+    <script>
+         
+         let arr = [];
+
+         function addItem() {
+            const addText = document.getElementById("addList").value;
+
+            if(addList) {
+                arr.push(addText);
+                alert(`Added "${addText}" to list!`)
+                document.getElementById('addList').value = '';
+            }
+            
+            else {
+                alert("Nothing added!");
+            }
+         }
+
+         function deleteLastItem() {
+            if (arr.length > 0) {
+                const removedElement = arr.pop();
+                alert(`Deleted: "${removedElement}" from the list!`)
+            }
+
+         }
+
+         function displayList() {
+            const listContents = document.getElementById('listContents');
+            listContents.innerHTML = '';  
+
+            if (arr.length === 0) {
+                alert("Array is empty.");
+                return;
+            }
+
+            arr.forEach((item, index) => {
+                const listItem = document.createElement('li');
+                listItem.textContent = 'Item ' + (index + 1) + ': ' + item;  
+                listContents.appendChild(listItem);
+            });
+        }
+    </script>
+
+</body>
+
+</html>
