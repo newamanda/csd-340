@@ -1,0 +1,95 @@
+<!--Amanda New
+    CSD340-A311
+    Module 12.2 Assignment
+    JavaScript Exercise, Part 4
+    03/09/2025
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<!--link css file-->
+<head>
+    <link href="New_Mod12_2.css" rel="stylesheet">
+
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+
+<body>
+    <div id=”container”>
+
+        <h1 style="text-align: center;">Assignment 12.2: JavaScript - Part 4</h1>
+        
+        <div class="left" style="float: left;">
+            <button onclick="displayTopToBottom()">Top to Bottom</button>
+            <button onclick="displayBottomToTop()">Bottom to Top</button>
+
+            <h3>Top 10 Favorite Books</h3>
+                <ol id="booksList">
+
+                </ol>
+        </div>
+        <div class="right" style="float: right;">
+            <h3>5 Things I’ve Learned Since the Course Started</h3>
+                <ul class="learned">
+                    <li>How to Set Up GitHub Pages</li>
+                    <li>How to link Google Fonts</li>
+                    <li>What an "Anchor Tag" is</li>
+                    <li>How to change Anchor Tag when hovered/visited</li>
+                    <li>How to format webpages</li>
+
+                </ul>
+        </div>
+
+        <script>
+
+            const books = [
+
+                "From Blood and Ash",
+                "Kingdom of Ash",
+                "A Court of Mist and Fury",
+                "Ignite Me",
+                "The Ballad of Never After",
+                "Two Twisted Crowns",
+                "Empire of Storms",
+                "The Serpent and the Wings of Night",
+                "Fourth Wing",
+                "A Shadow in the Ember"
+            ];
+
+            function displayTopToBottom() {
+                const sortedList = books.slice().sort();
+                displayBooks(sortedList)
+            }
+
+            function displayBottomToTop() {
+                const sortedList = books.slice().sort().reverse();
+                displayBooks(sortedList)
+            }
+
+            function displayBooks(sortedBooks) {
+                const bookList = document.getElementsByClassName("books");
+                booksList.innerHTML = "";
+
+                sortedBooks.forEach(book => {
+                    const li = document.createElement("li");
+                    li.textContent = book;
+                    booksList.appendChild(li);
+                });
+            }
+
+            displayBooks(books);
+        </script>
+    
+        
+        <div class="last" style="width: 100%; margin-top: 60%;">
+            <a href="../index.html">Landing Page</a>
+        </div>
+
+    </div>
+    
+
+</body>
+
+</html>
+
